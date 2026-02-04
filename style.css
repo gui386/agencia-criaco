@@ -147,28 +147,43 @@ h2 {
   text-align: center;
 }
 
-/* CONTATO */
+/* contatos-incones */
+
 .contato {
+  background-color: #313630;
+  padding: 80px 20px;
   text-align: center;
-  /* CONTATOS HEADER */
-.contatos-header {
+}
+
+.contato h2 {
+  color: #e4d7c2;
+  margin-bottom: 30px;
+}
+
+.contatos-icons {
   display: flex;
-  align-items: center;
-  gap: 15px;
-  
+  justify-content: center;
+  gap: 30px;
 }
 
-.contatos-header img {
-  width: 22px;
-  height: 22px;
-  transition: transform 0.2s ease;
+.contatos-icons a {
+  background-color: #3a403c;
+  padding: 18px;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
 }
 
-.contatos-header img:hover {
-  transform: scale(1.1);
+.contatos-icons a:hover {
+  transform: translateY(-6px);
 }
 
+.contatos-icons img {
+  width: 32px;
+  height: 32px;
 }
+
+
+
 
 /* FOOTER */
 .footer {
@@ -218,4 +233,52 @@ h2 {
   width: 26px;
   height: 26px;
 }
+/* GALERIA HORIZONTAL */
+.galeria {
+  background-color: #313630;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.galeria h2 {
+  color: #e4d7c2;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.galeria p {
+  color: #dcc8a9;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.galeria-horizontal {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+}
+
+.galeria-horizontal::-webkit-scrollbar {
+  height: 6px;
+}
+
+.galeria-horizontal::-webkit-scrollbar-thumb {
+  background: #dcc8a9;
+  border-radius: 10px;
+}
+
+.galeria-horizontal img {
+  flex: 0 0 auto;
+  width: 280px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.galeria-horizontal img:hover {
+  transform: scale(1.05);
+}
+
 
