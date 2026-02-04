@@ -11,6 +11,14 @@
 
   <link rel="stylesheet" href="style.css" />
 </head>
+<a 
+  href="https://wa.me/3199194-7555" 
+  target="_blank" 
+  class="whatsapp-float"
+  aria-label="WhatsApp"
+>
+  <img src="img/WhatsApp_icon.png" alt="WhatsApp" />
+</a>
 
 <body id="home">
 
@@ -137,7 +145,7 @@
 
       <div class="fundadora-img">
         
-        <img src="esposa.jpeg" alt="Jessica - Fundadora da Criaco" />
+        <img src="esposa.jpg" alt="Jessica - Fundadora da Criaco" />
       </div>
     </div>
   </section>
@@ -146,38 +154,54 @@
   <section class="depoimentos">
     <h2>Depoimentos</h2>
     <p>Fotos e vídeos de clientes podem ser inseridos aqui.</p>
+    <section id="galeria" class="galeria">
+  <h2>Projetos e Resultados</h2>
+  <p>Alguns trabalhos e marcas que já passaram pela Criaco</p>
+
+  <div class="galeria-horizontal">
+    <img src="img/esposa.png" alt="Projeto Criaco 1">
+    <img src="img/galeria2.png" alt="Projeto Criaco 2">
+    <img src="img/galeria3.png" alt="Projeto Criaco 3">
+    <img src="img/galeria4.png" alt="Projeto Criaco 4">
+    <img src="img/galeria5.png" alt="Projeto Criaco 5">
+    <img src="img/galeria6.png" alt="Projeto Criaco 6">
+  </div>
+</section>
+
   </section>
 
   <!-- CONTATO -->
-  <section id="contato" class="contato">
-    <h2>Vamos conversar?</h2>
+ <section id="contato" class="contato">
+  <h2>Vamos conversar?</h2>
+
+  <div class="contatos-icons">
     <a 
-  href="https://wa.me/3199194-7555" 
-  target="_blank" 
-  class="btn"
->
-  Falar com a Criaco agora
-</a>
+      href="https://wa.me/3199194-7555" 
+      target="_blank" 
+      aria-label="WhatsApp"
+    >
+      <img src="img/WhatsApp_icon.png" alt="WhatsApp">
+    </a>
 
-    <div class="contatos-header">
-  <a 
-    href="https://wa.me/3199194-7555" 
-    target="_blank" 
-    aria-label="WhatsApp"
-  >
-    <img src="img/WhatsApp_icon.png" alt="WhatsApp" />
-  </a>
+    <a 
+      href="https://www.instagram.com/mktjessicasilva?igsh=aWc2M3A2b2dzb21n" 
+      target="_blank" 
+      aria-label="Instagram"
+    >
+      <img src="img/instagram-icon-logo-png.png" alt="Instagram">
+    </a>
 
-  <a 
-    href="https://www.instagram.com/mktjessicasilva?igsh=aWc2M3A2b2dzb21n" 
-    target="_blank" 
-    aria-label="Instagram"
-  >
-    <img src="img/instagram-icon-logo-png.png" alt="Instagram" />
-  </a>
-</div>
+    <a 
+      href="https://www.linkedin.com/company/criaco" 
+      target="_blank" 
+      aria-label="LinkedIn"
+    >
+      <img src="img/icon-linkedin.svg" alt="LinkedIn">
+    </a>
+  </div>
+</section>
 
-  </section>
+
   
 
   <!-- FOOTER -->
@@ -185,11 +209,16 @@
     <p>© 2026 Criaco — Marketing Estratégico</p>
   </footer>
 
-  <!-- BOTÃO TOPO -->
-  <button id="btnTopo" title="Voltar ao topo">⬆️</button>
-
   <!-- JS -->
   <script src="js/script.js"></script>
+  <script>
+  const galeria = document.querySelector('.galeria-horizontal');
+
+  galeria.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    galeria.scrollLeft += e.deltaY;
+  });
+</script>
+
 </body>
 </html>
-
